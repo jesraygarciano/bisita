@@ -6,7 +6,7 @@ $factory->define(App\Signature::class, function (Faker $faker) {
     return [
         //
         'name' => $faker->name,
-        'email' => $faker->email,
+        'email' => $faker->safeEmail,
         'body' => $faker->sentence
     ];
 });
