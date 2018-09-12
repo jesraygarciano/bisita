@@ -7,4 +7,14 @@ use Illuminate\Http\Request;
 class SignatureController extends Controller
 {
     //
+    /**
+     * Display the GuestBook homepage.
+     * 
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+
+     public function index()
+     {
+         return view('signatures.index');
+     }
 }
