@@ -20,4 +20,9 @@ class Signature extends Model
     {
         return $query->where('flagged_at', null);
     }
+    
+    public function flag()
+    {
+        return $this->update(['flagged_at' => \Carbon\Carbon::now()]);
+    }
 }
